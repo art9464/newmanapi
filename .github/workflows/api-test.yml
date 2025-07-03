@@ -21,6 +21,10 @@ jobs:
 
       - name: Install Newman
         run: npm install -g newman
+        - name: Install Newman + HTML reporter
+  run: |
+    npm install -g newman
+    npm install -g newman-reporter-html
 
       - name: Run Newman with HTML report
         run: |
