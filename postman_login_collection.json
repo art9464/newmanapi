@@ -16,9 +16,9 @@
             "value": "application/json"
           }
         ],
-        "body": {
-  "email": "eve.holt@reqres.in",
-  "password": "cityslicka"
+        "body":"body": {
+  "mode": "raw",
+  "raw": "{\"email\": \"eve.holt@reqres.in\", \"password\": \"cityslicka\"}"
 },
         "url": {
           "raw": "https://reqres.in/api/login",
