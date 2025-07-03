@@ -16,7 +16,7 @@
             "value": "application/json"
           }
         ],
-        "body":"body": {
+        "body": {
   "mode": "raw",
   "raw": "{\"email\": \"eve.holt@reqres.in\", \"password\": \"cityslicka\"}"
 },
