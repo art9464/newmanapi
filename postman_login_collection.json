@@ -17,9 +17,9 @@
           }
         ],
         "body": {
-          "mode": "raw",
-          "raw": "{\"username\": \"testuser\", \"password\": \"testpass\"}"
-        },
+  "email": "eve.holt@reqres.in",
+  "password": "cityslicka"
+},
         "url": {
           "raw": "https://reqres.in/api/login",
           "protocol": "https",
