@@ -1,8 +1,7 @@
 {
   "info": {
-    "name": "Login API Test Collection",
-    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
-    "description": "A sample Postman collection for login API automation testing.",
+    "name": "Login API Test",
+    "_postman_id": "your-id",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
@@ -16,37 +15,32 @@
             "value": "application/json"
           }
         ],
-        "body": {
-  "mode": "raw",
-  "raw": "{\"email\": \"eve.holt@reqres.in\", \"password\": \"cityslicka\"}"
-},
         "url": {
           "raw": "https://reqres.in/api/login",
           "protocol": "https",
-          "host": [
-            "reqres",
-            "in"
-          ],
-          "path": [
-            "api",
-            "login"
-          ]
+          "host": ["reqres", "in"],
+          "path": ["api", "login"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\": \"eve.holt@reqres.in\", \"password\": \"cityslicka\"}"
         }
       },
       "event": [
         {
           "listen": "test",
           "script": {
-            "type": "text/javascript",
             "exec": [
               "pm.test(\"Status code is 200\", function () {",
               "    pm.response.to.have.status(200);",
               "});",
+              "",
               "pm.test(\"Token exists\", function () {",
               "    var jsonData = pm.response.json();",
               "    pm.expect(jsonData.token).to.exist;",
               "});"
-            ]
+            ],
+            "type": "text/javascript"
           }
         }
       ]
